@@ -1,0 +1,77 @@
+* {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+}
+body {
+      background: black;
+      color: white;
+}
+#header {
+      width: 100%;
+      height: 100vh;
+      /* background-image: url('https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'); */
+      background-size: cover;
+      background-position: center;
+}
+.container {
+      padding: 10px 10% ;
+}
+nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+}
+.logo {
+      width: 140px;
+}
+nav ul li {
+      display: inline-block;
+      list-style: none;
+      margin: 10px 20px;
+
+}
+nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      transition: font-size text-decoration color .3s ease; 
+}
+nav ul li a:hover {
+      color: red;
+      text-decoration: underline;
+}
+.header-text {
+      margin-top: 20%;
+      font-size: 25px;
+}
+.header-text h1 {
+      font-size: 55px;
+      margin-top: 20px;
+}
+.header-text h1 span {
+      color: red;
+}
+
+/* About Me Section  */
+#about {
+      padding: 80px 0;
+      color: rgb(186, 186, 186);
+}
+.row{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+}
+.about-col-1 {
+      flex-basis: 35%;
+}
+.about-col-1 img {
+      width: 100%;
+      border-radius: 15px;
+}
+.about-col-1{
+      
+}
