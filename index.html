@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="/style.css">
-      <script></script>
+      <script src="/script.js" defer></script>
       <title>Christopher's Porfolio</title>
 </head>
 <body>
@@ -17,14 +17,13 @@
                         <ul>
                               <li><a href="#">Home</a></li>
                               <li><a href="#about">About</a></li>
-                              <li><a href="#">Services</a></li>
-                              <li><a href="#">Portfolio</a></li>
+                              <li><a href="#portfolio">Portfolio</a></li>
                               <li><a href="#">Contact</a></li>
                         </ul>
                   </nav>
                   <div class="header-text">
                         <p>Full-Stack Developer</p>
-                        <h1>Hi, I'm <span>Christopher Morales</span> <br> From Texas</h1>
+                        <h1>Hi, I'm <span>Chris Morales</span> <br> from Texas</h1>
                   </div>
             </div>
       </div>
@@ -34,9 +33,54 @@
                   <div class="row">
                         <div class="about-col-1">
                               <img src="/images/aboutMe.jpg" alt="">
+                              <!-- <button class="resume" onclick="openResume()">View Resume</button> -->
                         </div>
                         <div class="about-col-2">
-                              <h1>About Me</h1>
+                              <h1 class="sub-title">About Me</h1>
+                              <p>
+                                    I am a Software Engineer with a passion for creating user-friendly websites and applications. With a background in education and finance, I bring a unique perspective to problem-solving. I approach every project with a can-do attitude, continuously learning and staying at the forefront of technology. My goal is to contribute my skills in problem-solving, organization, and continuous learning to cutting-edge software engineering and make a lasting impact.
+                              </p>
+                              <div class="tab-titles">
+                                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                              </div>
+                              <div class="tab-contents active-tab" id="skills">
+                                    <ul>
+                                          <li><span>Web Development</span><br>Web App Development</li>
+                                          <li><span>MERN Stack</span><br>MongoDB<br>ExpressJS<br>React<br>NodeJS<br></li>
+                                          <li><span>CSS Frameworks</span><br>Bootstrap</li>
+                                    </ul>
+                              </div>
+                              <div class="tab-contents" id="experience">
+                                    <ul>
+                                          <li><span>January 2023-April 2023</span><br>Nucamp: Front-End Bootcamp</li>
+                                          <li><span>May 2023-Current</span><br>General Assembly Software Engineering Immersive Course</li>
+                                    </ul>
+                              </div>
+                              <div class="tab-contents" id="education">
+                                    <ul>
+                                          <li><span>2010</span><br>Bachelors Degree in Finance</li>
+                                          <li><span>May 2023-Current</span><br>General Assembly Software Engineering Immersive Course</li>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <!-- Portfolio Section -->
+      <div id="portfolio">
+            <div class="container">
+                  <h1 class="sub-title">My Work</h1>
+                  <div class="work-list">
+                        <div class="work">
+                              <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80" alt="">
+                        </div>
+                        <div class="work">
+                              <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80" alt="">
+                        </div>
+                        <div class="work">
+                              <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80" alt="">
                         </div>
                   </div>
             </div>
