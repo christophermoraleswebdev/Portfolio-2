@@ -16,7 +16,7 @@ body {
       background-position: center;
 }
 .container {
-      padding: 10px 10% ;
+      padding: 15px 10% ;
 }
 /* Navbar */
 nav {
@@ -26,7 +26,10 @@ nav {
       flex-wrap: wrap;
 }
 .logo {
-      width: 140px;
+      font-size: 40px;
+}
+.logo span {
+      color: #00c324;
 }
 nav ul li {
       display: inline-block;
@@ -37,12 +40,13 @@ nav ul li {
 nav ul li a {
       text-decoration: none;
       color: white;
-      font-size: 20px;
+      font-size: 18px;
       transition: font-size text-decoration color .3s ease; 
 }
 nav ul li a:hover {
-      color: red;
+      color: #00c324;
       text-decoration: underline;
+      font-size: 22px;
 }
 /* Header */
 .header-text {
@@ -54,7 +58,7 @@ nav ul li a:hover {
       margin-top: 20px;
 }
 .header-text h1 span {
-      color: red;
+      color: #00c324;
 }
 /* About Me Section  */
 #about {
@@ -72,15 +76,6 @@ nav ul li a:hover {
 .about-col-1 img {
       width: 100%;
       border-radius: 15px;
-}
-.about-col-1 button {
-      margin-top: 25px;
-      background-color: #ff004f;
-      width: 110px;
-      height: 35px;
-      font-size: 15px;
-      color: whitesmoke;
-      border-radius: 10px;
 }
 .about-col-1 button:hover {
       width: 125px;
@@ -112,7 +107,7 @@ nav ul li a:hover {
       content: '';
       width: 0;
       height: 3px;
-      background: #ff004f;
+      background: #00901a;
       position: absolute;
       left: 0;
       bottom: -8px;
@@ -126,7 +121,7 @@ nav ul li a:hover {
       margin: 10px 0;
 }
 .tab-contents ul li span {
-      color: rgb(253, 48, 48);
+      color: #00901a;
       font-size: 14px;
 }
 .tab-contents {
@@ -154,4 +149,117 @@ nav ul li a:hover {
       width: 100%;
       border-radius: 10px;
       display: block;
+      transition: transform 0.5s;
 }
+.layer {
+      width: 100%;
+      height: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), #00c324);
+      border-radius: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 40px;
+      text-align: center;
+      font-size: 14px;
+      transition: height .5s; 
+}
+.layer h3 {
+      font-weight: 400;
+      margin-bottom: 20px;
+}
+.layer a {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 60px;
+      background-color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+}
+.work:hover img {
+      transform: scale(1.1);
+}
+.work:hover .layer {
+      height: 100%;
+}
+.btn {
+      display: block;
+      margin: 50px auto;
+      width: fit-content;
+      border: 1px solid #00c324;
+      padding: 14px 50px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: white;
+      transition: background .5s;
+}
+.btn:hover {
+      background: #00c324;
+}
+/* Contact Section */
+.contact-left {
+      flex-basis: 35%;
+}
+.contact-right {
+      flex-basis: 60%;
+}
+.contact-left p {
+      margin-top: 30px;
+}
+.contact-left p i {
+      margin-right: 15px;
+      font-size: 25px;
+}
+.social-icons {
+      margin-top: 30px;
+}
+.social-icons a {
+      font-size: 30px;
+      margin-right: 15px;
+      display: inline-block;
+      color: #ababab;
+      transition: transform .5s;
+}
+.social-icons a:hover {
+      color: #04851b;
+      transform: translateY(-5px);
+}
+.btn.btn2 {
+      display: inline-block;
+      background-color: #04851b;
+}
+.contact-right form {
+      width: 100%;
+}
+form input, form textarea {
+      width: 100%;
+      border: 0;
+      outline: none;
+      background: #262626;
+      padding: 15px;
+      margin: 15px 0; 
+      color: white;
+      font-size: 18px;
+      border-radius: 6px;
+}
+form .btn2 {
+      padding: 14px 60px;
+      font-size: 18px;
+      margin-top: 20px;
+      cursor: pointer;
+}
+.copyright {
+      width: 100%;
+      text-align: center;
+      padding: 25px 0;
+      background: #262626;
+      font-weight: 300;
+      margin-top: 20px;
+}
+
